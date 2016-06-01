@@ -8,6 +8,8 @@ I've created Person as a class because that's the most logical and flexible
 structure.  I've created Race as a class because I can then set various
 variables to be race-specific. This structure also allows me to extend the
 model to consider other demographics, such as age band, etc...
+
+20160601 added to a new github repository
 """
 
 import numpy as np
