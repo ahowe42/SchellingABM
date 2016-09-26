@@ -28,6 +28,18 @@
         </ul>
       </header>
       <section>
+<h3>Schelling's Model of Segregation</h3>
+<p> In the 1970's, economist Thomas Schelling started investigating the prevalence of residential segregation along racial and socio-economic lines.  It was thought that segregation was so prevalent because certain classes of people have strong preferences to live among others like them. Schelling developed a simple game theory model with agents representing people living in neighborhoods.
+<p>
+Each agent had a similarity preference (SP) which dictated how many of their neighbors needed to be similar for them to be happy. For a grid where each locus represents an agent, an SP of 8 indicates that a person would only be happy if surrounded by similar people.  At the other extreme, SP=0 would indicate that a person didn't care.
+<p> 
+When Schelling developed the model concept, computers were not as widespread as now, so he drew out a grid on paper, used coins for agents, and manually kept track of the results.  His results suggested that large-scale segregation occur even when people only have weak preferences for similar neighbors.
+
+<h3>My Implementation</h3>
+<p>
+I have developed this model here in Python as a very simple project by which to get familiar with GITHUB.  Agents are coded as objects, which is probably the most logical and flexible way to do that.  What I've done that might be less typical is encoded each agent with a Race attribute, which is also a separate object.  While each Person (the agent) object can have their own SP, the SP is currently an attribute of the Race object.  This structure can easily be extended to allow each agent to have multiple characteristics along which similarity preference can be measured.
+
+<!--
         <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
