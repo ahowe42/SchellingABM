@@ -33,7 +33,7 @@
 <p>Each agent has a similarity preference (SP) which dictates how many neighbors need to be similar for the agent to be happy. In the grid where each locus represents a home where an agent can live, the &quot;neighborhood&quot; of the agent includes the grid locations within distance 1. An SP of 8 indicates that an agent would only be happy if completely surrounded by similar agents. At the other extreme, SP=0 would indicate that an agent didn't care about the neighborhoods similarity.</p>
 <p>When Schelling developed the model concept, computers were not as widespread as now, so he drew out a grid on paper, used coins for agents, and manually kept track of the results. His results suggested that large-scale segregation occur even when people only have weak preferences for similar neighbors.</p>
 
-<h3>Complex Adaptive Systems &namp; Emergence</h3>
+<h3>Complex Adaptive Systems &amp; Emergence</h3>
 <p>The power of the agent-based models such as this is in the complexity and patterns that arises from simplicity. In this case, each agent evaluates a simple relation for happiness: <it>happy=&#91;n(neighbors similar)&ge;SP&#93;</it>. If an agent is unhappy, it follows the simple rule of making a move to a randomly-selected unoccupied location on the grid. The process of evaluating happiness then possibly moving is iterated over all agents in sequence until some criteria is met. Even with low SPs, marked patterns of segregation arise as the model is iterated. The pattern of segregation can be called <it>emergent behavior</i>.</p>
 
 <h3>My Implementation</h3>
@@ -44,11 +44,11 @@
 <p>Figure 2 tells us some by-iteration information about the models evolution. In the left pane, we see that the number of happy agents converged very quickly to near 85&#37; in fact, it had converged by iteration 20, and just made small corrections for the remaining 480 iterations. The right pane shows how many agents moved to new locations in each iteration. This metric similarly converged quickly to around 470 movers in each iteration.</p>
 <p>
 <figure>
-  <img src="../images/figure_1.png" alt="The Agents Grid">
+  <img src="./images/figure_1.png" alt="The Agents Grid">
   <figcaption>Figure 1</figcaption>
 </figure>
 <figure>
-  <img src="../images/figure_2.png" alt="Model Progress">
+  <img src="./images/figure_2.png" alt="Model Progress">
   <figcaption>Figure 2</figcaption>
 </figure>
 </p>
